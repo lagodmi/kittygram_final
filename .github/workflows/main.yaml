@@ -2,8 +2,6 @@ name: Main Kittygram workflow
 
 on:
   push:
-    branches-ignore:
-      - main
 
 jobs:
   tests:
@@ -78,7 +76,6 @@ jobs:
         cd frontend/
         npm run test
 
-
   build_frontend_and_push_to_docker_hub:
     name: Push frontend Docker image to DockerHub
     runs-on: ubuntu-latest
@@ -99,7 +96,6 @@ jobs:
           context: ./frontend/
           push: true
           tags: lagdmitrii/kittygram_frontend:latest
-
 
   build_gateway_and_push_to_docker_hub:
     name: Push gateway Docker image to DockerHub
