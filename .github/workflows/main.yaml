@@ -121,10 +121,6 @@ jobs:
           context: ./nginx/
           push: true
           tags: lagdmitrii/kittygram_gateway:latest
-  on:
-    push:
-      branches:
-        - main
 
   deploy:
     runs-on: ubuntu-latest
