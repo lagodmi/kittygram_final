@@ -6,8 +6,6 @@
 - Django 3.2.3
 - Django REST framework 3.12.4
 - JavaScript
-## Cсылку на развернутый проект:
-- https://kittygram.h1n.ru/
 ## Процесс запуска проекта (через docker compose):
 ### Какую версию развернуть:
 - В случае развертывания проекта в производственной среде следует использовать docker-compose.production.yml.
